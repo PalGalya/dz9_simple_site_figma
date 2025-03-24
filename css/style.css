@@ -255,3 +255,132 @@ display: block;
   font-size: 0.875rem; /* 14px */
   /* font-weight: 400; */
 }
+
+/* Для екранів від 992px і більше */
+@media (max-width: 992px) {
+  :root {
+    --container-primary: 720px;
+    --gap-xl: var(--gap-lg);
+  }
+
+  .header {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+
+  .navbar {
+    margin-bottom: 70px;
+  }
+
+  .experience__container {
+    justify-content: space-evenly;
+    gap: var(--gap-lg);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .section {
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
+}
+
+/* Для екранів від 768px до 992px */
+@media (max-width: 768px) {
+  :root {
+    --container-primary: 540px;
+    --gap-xl: var(--gap);
+  }
+
+  .navbar__list {
+    column-gap: 15px;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .experience-item {
+    width: calc(50% - var(--gap));
+  }
+
+  .section {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+}
+
+/* Для екранів від 576px до 768px */
+@media (max-width: 576px) {
+  :root {
+    --container-primary: 100%;
+    --gap: 15px;
+  }
+
+  .navbar {
+    margin-bottom: 50px;
+  }
+
+  .navbar__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .content {
+    text-align: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .experience-item {
+    width: 100%;
+  }
+
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+}
+
+/* Для екранів менших за 375px */
+@media (max-width: 375px) {
+  :root {
+    --font-size: 14px;
+    --gap-xl: var(--gap-sm);
+  }
+
+  .header {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .navbar {
+    margin-bottom: 40px;
+  }
+
+  .content__button {
+    min-width: 180px;
+    min-height: 45px;
+    font-size: 0.875rem;
+  }
+
+  .section {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+}
