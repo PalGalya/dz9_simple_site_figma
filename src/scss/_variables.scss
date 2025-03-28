@@ -1,0 +1,21 @@
+// Заміна CSS на SCSS
+// Змінні
+$color-black: #000000;
+$color-primary: #34547a;
+$color-secondary: #727272;
+$color-gray-light: #edeef0;
+$color-white: #ffffff;
+
+$font-size: 16px;
+$font-family: "Roboto", sans-serif;
+$letter-spacing: 0.1em;
+$line-height: 1.64;
+$line-height-sm: 1.4;
+
+$container-primary: 1110px;
+$container-secondary: 540px;
+
+$gap: 20px;
+$gap-sm: $gap * 0.5;
+$gap-lg: $gap * 1.5;
+$gap-xl: $gap * 2;

@@ -1,0 +1,37 @@
+@use '../abstracts' as *;
+
+.header {
+  background-color: $color-gray-light;
+  padding-top: 69px;
+  padding-bottom: 141px;
+
+  .navbar {
+    margin-bottom: 141px;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 27px;
+      margin-left: -0.75em;
+    }
+
+    &__link {
+      display: block;
+      padding: 0.5em 0.75em;
+      text-transform: uppercase;
+      letter-spacing: $letter-spacing;
+
+      &--active {
+        color: $color-primary;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@include media-lg {
+  .header {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+}
