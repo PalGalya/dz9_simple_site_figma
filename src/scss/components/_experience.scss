@@ -3,11 +3,10 @@
 .experience {
   background-color: $color-primary;
   color: $color-white;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  @include section-padding;
 
   &__container {
-    display: flex;
+    @include flex-base;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: $gap-xl;
@@ -15,7 +14,7 @@
 }
 
 .experience-item {
-  display: flex;
+  @include flex-base;
   gap: $gap;
 
   &__description {
