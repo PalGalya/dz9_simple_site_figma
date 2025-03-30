@@ -1,0 +1,33 @@
+@use '../abstracts' as *;
+
+.nav {
+    margin-bottom: 141px;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 27px;
+        margin-left: -0.75em;
+    }
+
+    &__item {
+        margin: 0;
+    }
+
+    &__link {
+        display: block;
+        padding: 0.5em 0.75em;
+        text-transform: uppercase;
+        letter-spacing: $letter-spacing;
+        font-weight: 500;
+        color: $color-black;
+
+        &:hover {
+            color: $color-primary;
+        }
+
+        &--active {
+            color: $color-primary;
+        }
+    }
+}

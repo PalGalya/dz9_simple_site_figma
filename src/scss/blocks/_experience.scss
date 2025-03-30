@@ -1,0 +1,52 @@
+@use "../partials" as *;
+
+.experience {
+  background-color: $color-primary;
+  color: $color-white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &__container {
+    @include flex($justify: space-between, $gap: $gap-xl); // використання міксину для флекс-контейнера
+    flex-wrap: wrap;
+
+    @include media-sm {
+      gap: $gap;
+    }
+  }
+}
+
+.experience-item {
+  @include flex($gap: $gap);
+
+  @include media-sm {
+    width: calc(50% - $gap);
+  }
+
+  @include media-xs {
+    width: 100%;
+  }
+
+  @include media-xxs {
+    gap: $gap-sm;
+  }
+
+  &__description {
+    line-height: 1;
+    @include flex($direction: column, $justify: space-between);
+  }
+
+  &__number {
+    font-size: 1.3125rem;
+    font-weight: 500;
+  }
+
+  &__picture {
+    display: block;
+    order: -1;
+  }
+
+  &__image {
+    display: block;
+  }
+}

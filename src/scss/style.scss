@@ -1,0 +1,13 @@
+@use "partials" as *;
+
+// Блоки
+@use "blocks/header";
+@use "blocks/navbar";
+@use "blocks/content";
+@use "blocks/section";
+@use "blocks/about";
+@use "blocks/works";
+@use "blocks/experience";
+@use "blocks/video";
+@use "blocks/footer";
+

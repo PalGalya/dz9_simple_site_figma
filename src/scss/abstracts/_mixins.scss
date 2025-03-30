@@ -1,0 +1,49 @@
+@use 'variables' as *;
+
+@mixin container {
+  width: min(100% - $gap-xl, $container-primary);
+  margin-inline: auto;
+}
+
+@mixin container-sm {
+  width: min(100% - $gap-xl, $container-secondary);
+  margin-inline: auto;
+}
+
+@mixin header {
+  background-color: $color-gray-light;
+  padding-top: 69px;
+  padding-bottom: 141px;
+}
+
+@mixin experience {
+  background-color: $color-primary;
+  color: $color-white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@mixin video {
+  background-color: $color-gray-light;
+  margin-top: calc($gap-xl * -1);
+  padding-bottom: 100px;
+}
+
+@mixin footer {
+  background-color: $color-primary;
+  color: $color-white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@mixin media-lg {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-down($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}

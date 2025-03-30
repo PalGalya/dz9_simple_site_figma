@@ -1,0 +1,46 @@
+@use "../partials" as *;
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: $container-secondary;
+
+  @include media-sm {
+    max-width: 100%;
+  }
+
+  @include media-xs {
+    text-align: center;
+    align-items: center;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 38px;
+  }
+
+  &__description {
+    color: $color-secondary;
+    margin-bottom: 57px;
+  }
+
+  &__button {
+    @include button-base; // використання міксину для кнопки
+    min-width: 225px;
+    min-height: 65px;
+    background-color: $color-primary;
+    color: $color-white;
+
+    @include media-sm {
+      min-width: 200px;
+      min-height: 55px;
+    }
+
+    @include media-xxs {
+      min-width: 180px;
+      min-height: 45px;
+      font-size: 0.875rem;
+    }
+  }
+}
