@@ -20,5 +20,8 @@
     "postcss-discard-comments": "^7.0.3",
     "sass": "^1.81.0",
     "sort-css-media-queries": "^2.4.0"
+  },
+  "scripts": {
+    "sass": "sass src/scss/main.scss:dist/css/main.css --watch --style compressed"
   }
 }

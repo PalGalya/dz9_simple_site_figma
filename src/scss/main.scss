@@ -1,4 +1,5 @@
 @use 'abstracts' as *;
+@use 'components/navigation';
 
 * {
   box-sizing: border-box;
@@ -17,6 +18,3 @@ html {
 body {
   margin: 0;
 }
-
-// Components
-@import 'components/navigation';
