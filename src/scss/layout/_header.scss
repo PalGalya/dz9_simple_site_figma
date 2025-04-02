@@ -1,8 +1,10 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
+@use "../abstracts/mixins-media" as *;
 
 .header {
-  background-color: $color-gray-light;
   padding-top: 69px;
   padding-bottom: 141px;
+
+  background-color: $color-gray-light;
 }

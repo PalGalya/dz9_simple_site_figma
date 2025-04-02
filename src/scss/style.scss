@@ -1,13 +1,4 @@
-@use "partials" as *;
-
-// Блоки
-@use "blocks/header";
-@use "blocks/navbar";
-@use "blocks/content";
-@use "blocks/section";
-@use "blocks/about";
-@use "blocks/works";
-@use "blocks/experience";
-@use "blocks/video";
-@use "blocks/footer";
-
+@use "abstracts/index" as abstracts;
+@use "base/index" as base;
+@use "components/index" as components;
+@use "layout/index" as layout;

@@ -7,6 +7,13 @@
   }
 }
 
+/// Міксин для великих екранів
+@mixin media-large {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
 /// Міксин для середніх екранів
 @mixin media-md {
   @media (width < 992px) {
@@ -29,5 +36,15 @@
 @mixin media-xxs {
   @media (width < 375px) {
     @content;
+  }
+}
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == small {
+    @media (max-width: 600px) { @content; }
+  } @else if $breakpoint == medium {
+    @media (max-width: 768px) { @content; }
+  } @else if $breakpoint == large {
+    @media (max-width: 1024px) { @content; }
   }
 }

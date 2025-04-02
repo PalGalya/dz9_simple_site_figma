@@ -1,4 +1,6 @@
-@use '../abstracts' as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/mixins-media" as *;
 
 .navbar {
   margin-bottom: 141px;
@@ -6,18 +8,35 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 27px;
+
     margin-left: -0.75em;
+
+    column-gap: 27px;
+    @include media-sm {
+      margin-left: 0;
+
+      column-gap: 15px;
+    }
+    @include media-xs {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      row-gap: 10px;
+    }
   }
 
   &__link {
     display: block;
+
     padding: 0.5em 0.75em;
-    text-transform: uppercase;
+
     letter-spacing: $letter-spacing;
+    text-transform: uppercase;
 
     &--active {
       color: $color-primary;
+
       font-weight: 500;
     }
   }

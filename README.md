@@ -1,11 +1,39 @@
 # Simple Site SCSS
 
-## Структура проекту
+## Структура проекта
 ```
-scss/
-├── blocks/         # Компоненти
-├── partials/       # Загальні стилі
-└── style.scss      # Головний файл
+src/
+└── scss/
+    ├── abstracts/       # Общие инструменты и хелперы
+    │   ├── _index.scss
+    │   ├── _variables.scss
+    │   ├── _mixins.scss
+    │   ├── _mixins-media.scss
+    │   └── _extends.scss
+    │
+    ├── base/            # Базовые стили
+    │   ├── _index.scss
+    │   ├── _normalize.scss
+    │   ├── _typography.scss
+    │   └── _common.scss
+    │
+    ├── components/      # Компоненты
+    │   ├── _index.scss
+    │   ├── _navbar.scss
+    │   ├── _content.scss
+    │   └── _experience-item.scss
+    │
+    ├── layout/         # Макет и секции
+    │   ├── _index.scss
+    │   ├── _header.scss
+    │   ├── _footer.scss
+    │   ├── _section.scss
+    │   ├── _experience.scss
+    │   ├── _video.scss
+    │   ├── _about.scss
+    │   └── _works.scss
+    │
+    └── style.scss      # Главный файл
 ```
 
 ## Використані технології
@@ -17,4 +45,4 @@ scss/
 ## Особливості
 - Використання міксинів
 - Адаптивна верстка
-- Модульна структура
+- Модульна структура (7-1 патерн)

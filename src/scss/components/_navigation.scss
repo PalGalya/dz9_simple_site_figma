@@ -1,33 +1,39 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 .nav {
-    margin-bottom: 141px;
+  margin-bottom: 141px;
 
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 27px;
-        margin-left: -0.75em;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -0.75em;
+
+    column-gap: 27px;
+  }
+
+  &__item {
+    margin: 0;
+  }
+
+  &__link {
+    display: block;
+
+    padding: 0.5em 0.75em;
+
+    letter-spacing: $letter-spacing;
+    text-transform: uppercase;
+
+    color: $color-black;
+
+    font-weight: 500;
+
+    &:hover {
+      color: $color-primary;
     }
 
-    &__item {
-        margin: 0;
+    &--active {
+      color: $color-primary;
     }
-
-    &__link {
-        display: block;
-        padding: 0.5em 0.75em;
-        text-transform: uppercase;
-        letter-spacing: $letter-spacing;
-        font-weight: 500;
-        color: $color-black;
-
-        &:hover {
-            color: $color-primary;
-        }
-
-        &--active {
-            color: $color-primary;
-        }
-    }
+  }
 }

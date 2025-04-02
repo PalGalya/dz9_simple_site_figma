@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/mixins-media" as *;
+
+.about {
+  background-color: $color-white;
+}

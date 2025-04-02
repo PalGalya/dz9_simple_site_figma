@@ -1,17 +1,18 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
-@use "../abstracts/mixins-media" as *; // Додано підключення до mixins-media
+@use "../abstracts/mixins-media" as *;
 
 .experience {
-  background-color: $color-primary;
-  color: $color-white;
   padding-top: 100px;
   padding-bottom: 100px;
 
+  color: $color-white;
+  background-color: $color-primary;
+
   &__container {
-    @include flex($justify: space-between, $gap: $gap-xl); // використання міксину для флекс-контейнера
     flex-wrap: wrap;
 
+    @include flex($justify: space-between, $gap: $gap-xl);
     @include media-sm {
       gap: $gap;
     }
@@ -20,21 +21,19 @@
 
 .experience-item {
   @include flex($gap: $gap);
-
   @include media-sm {
     width: calc(50% - $gap);
   }
-
   @include media-xs {
     width: 100%;
   }
-
   @include media-xxs {
     gap: $gap-sm;
   }
 
   &__description {
     line-height: 1;
+
     @include flex($direction: column, $justify: space-between);
   }
 

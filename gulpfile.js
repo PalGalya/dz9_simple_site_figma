@@ -69,14 +69,14 @@ function compileScss() {
 }
 
 function compileScssMin() {
-  const pluginsForMinify = [...PLUGINS, cssnano({ preset: 'default' })]
+  const pluginsForMinify = [...PLUGINS, cssnano({ preset: 'default' })];
 
   return src(PATH.scssRootFile)
     .pipe(sass().on('error', sass.logError))
     .pipe(replace(SEARCH_IMAGE_REGEXP, REPLACEMENT_IMAGE_PATH))
     .pipe(postcss(pluginsForMinify))
     .pipe(rename({ suffix: '.min' }))
-    .pipe(dest(PATH.cssFolder))
+    .pipe(dest(PATH.cssFolder));
 }
 
 function compileScssDev() {
