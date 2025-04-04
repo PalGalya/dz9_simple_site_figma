@@ -1,4 +1,5 @@
-@use "abstracts/index" as abstracts;
-@use "base/index" as base;
-@use "components/index" as components;
-@use "layout/index" as layout;
+@forward "abstracts";
+@forward "base";
+@forward "components";
+@forward "layout";
+
