@@ -1,6 +1,7 @@
 # Simple Site SCSS
 
 ## Project Structure
+
 ```
 src/
 └── scss/
@@ -37,12 +38,14 @@ src/
 ```
 
 ## Technologies Used
+
 - SCSS
 - BEM methodology
 - Responsive design
 - Mobile First approach
 
 ## Features
+
 - Using mixins for reusable styles
 - Responsive layout with media queries
 - Modular structure (7-1 pattern)
