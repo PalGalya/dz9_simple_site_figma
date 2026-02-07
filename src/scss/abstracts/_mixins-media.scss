@@ -1,5 +1,5 @@
-/// Міксин для великих екранів
-/// @example scss - Використання
+/// Mixin for large screens
+/// @example scss - Usage
 ///   @include media-lg { ... }
 @mixin media-lg {
   @media (width < 1200px) {
@@ -7,14 +7,14 @@
   }
 }
 
-/// Міксин для великих екранів
+/// Mixin for large screens
 @mixin media-large {
   @media (min-width: 992px) {
     @content;
   }
 }
 
-/// Міксин для середніх екранів
+/// Mixin for medium screens
 @mixin media-md {
   @media (width < 992px) {
     @content;

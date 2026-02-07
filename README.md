@@ -1,29 +1,29 @@
 # Simple Site SCSS
 
-## Структура проекта
+## Project Structure
 ```
 src/
 └── scss/
-    ├── abstracts/       # Общие инструменты и хелперы
+    ├── abstracts/       # Common tools and helpers
     │   ├── _index.scss
     │   ├── _variables.scss
     │   ├── _mixins.scss
     │   ├── _mixins-media.scss
     │   └── _extends.scss
     │
-    ├── base/            # Базовые стили
+    ├── base/            # Base styles
     │   ├── _index.scss
     │   ├── _normalize.scss
     │   ├── _typography.scss
     │   └── _common.scss
     │
-    ├── components/      # Компоненты
+    ├── components/      # Components
     │   ├── _index.scss
     │   ├── _navbar.scss
     │   ├── _content.scss
     │   └── _experience-item.scss
     │
-    ├── layout/         # Макет и секции
+    ├── layout/         # Layout and sections
     │   ├── _index.scss
     │   ├── _header.scss
     │   ├── _footer.scss
@@ -33,16 +33,16 @@ src/
     │   ├── _about.scss
     │   └── _works.scss
     │
-    └── style.scss      # Главный файл
+    └── style.scss      # Main file
 ```
 
-## Використані технології
+## Technologies Used
 - SCSS
-- BEM методологія
-- Адаптивний дизайн
-- Mobile First підхід
+- BEM methodology
+- Responsive design
+- Mobile First approach
 
-## Особливості
-- Використання міксинів
-- Адаптивна верстка
-- Модульна структура (7-1 патерн)
+## Features
+- Using mixins for reusable styles
+- Responsive layout with media queries
+- Modular structure (7-1 pattern)

@@ -28,7 +28,7 @@
   }
 
   &__button {
-    @include button-base; // використання міксину для кнопки
+    @include button-base;
     min-width: 225px;
     min-height: 65px;
     background-color: $color-primary;

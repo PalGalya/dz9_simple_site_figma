@@ -36,7 +36,7 @@
     color: $color-white;
     background-color: $color-primary;
 
-    @include button-base; // використання міксину для кнопки
+    @include button-base;
     @include media-sm {
       min-width: 200px;
       min-height: 55px;

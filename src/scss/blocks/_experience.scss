@@ -1,6 +1,6 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
-@use "../abstracts/mixins-media" as *; // Додано підключення до mixins-media
+@use "../abstracts/mixins-media" as *;
 
 .experience {
   background-color: $color-primary;
@@ -9,7 +9,7 @@
   padding-bottom: 100px;
 
   &__container {
-    @include flex($justify: space-between, $gap: $gap-xl); // використання міксину для флекс-контейнера
+    @include flex($justify: space-between, $gap: $gap-xl);
     flex-wrap: wrap;
 
     @include media-sm {
